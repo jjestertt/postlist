@@ -6,16 +6,16 @@
   <p align="center">
     Страница с тестовым заданием
     <br />
-    <a href="https://github.com/github_username/repo_name">Посмотреть демо</a>
+    <a href="https://github.com/jjestertt/postlist">Посмотреть демо</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Сообщить об ошибке</a>
+    <a href="https://github.com/jjestertt/postlist/issues">Сообщить об ошибке</a>
   </p>
 </p>
 
 <!-- ABOUT THE PROJECT -->
 ## Об этом проекте
-<p>>
-<img src="https://raw.githubusercontent.com/jjestertt/postlist/master/screen.png" alt="screen" width="500"">
+<p align="center">
+<img src="https://raw.githubusercontent.com/jjestertt/postlist/master/screen.png" alt="screen" />
 </p>
 
 Приложение считывает данные с фейкового сервера, и отображает список постов, посты можно добавлять, редактировать и удалять. При нажатии на кнопку открыть. появляется страница с деталями поста, и комментариями к посту. Комментарии так же можно добавлять удалять и редактировать
@@ -56,6 +56,6 @@
 <!-- CONTACT -->
 ## Контакты
 
-Сивак Максим - [jjestertt@gmail.com](jjestertt@gmail.com) - email
+Сивак Максим - email jjestertt@gmail.com
 
 Ссылка на проект: [https://github.com/jjestertt/postlist](https://github.com/jjestertt/postlist)
