@@ -6,7 +6,7 @@ import PostListItem from "../components/PostsList/PostListItem/PostListItem";
 import PostsList from "../components/PostsList/PostsList";
 
 
-export default function PostsContainer({isFetch, setIsFetch, postsData, setPostsData}) {
+export default function PostsContainer({isFetch, setIsFetch, postsData, setPostsData, alert}) {
     const [showAddPost, toggleShowAddPost] = useState(false); //Показать окно добавления поста
 
     //Не загружаем страницу пока нет данных о постах
@@ -26,6 +26,7 @@ export default function PostsContainer({isFetch, setIsFetch, postsData, setPosts
             const newPostData = postsData.filter(post => post.id !== id);
             setPostsData(newPostData);
         } catch (e) {
+            alert.error("Ошибка удаления поста");
             console.error(e);
         } finally {
             setIsFetch(false);
@@ -53,6 +54,7 @@ export default function PostsContainer({isFetch, setIsFetch, postsData, setPosts
             });
             setPostsData(newPostsData);
         } catch (e) {
+            alert.error("Ошибка изменения поста");
             console.error(e);
         } finally {
             setIsFetch(false);
@@ -73,6 +75,7 @@ export default function PostsContainer({isFetch, setIsFetch, postsData, setPosts
             const newPostsData = [...postsData, response.data];
             setPostsData(newPostsData);
         } catch (e) {
+            alert.error("Ошибка добавления поста");
             console.error(e);
         } finally {
             setIsFetch(false);

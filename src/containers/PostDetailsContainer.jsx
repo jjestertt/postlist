@@ -6,7 +6,7 @@ import PostComments from "../components/PostComments/PostComments";
 import axios from "axios";
 
 
-const PostDetailsContainer = ({postsData, isFetch, setIsFetch}) => {
+const PostDetailsContainer = ({postsData, isFetch, setIsFetch, alert}) => {
     const [commentsData, setCommentsData] = useState(null); //{id: number,postId: number,text: string,}
     const {id} = useParams(); // id поста вычисляемое из адрессной строки
 
@@ -23,6 +23,7 @@ const PostDetailsContainer = ({postsData, isFetch, setIsFetch}) => {
                 const response = await axios.get(`https://my-json-server.typicode.com/jjestertt/fakeposts/comments?postId=${id}`);
                 setCommentsData(response.data);
             }catch (e) {
+                alert.error("Ошибка получения коментариев");
                 console.error(e);
             }finally {
                 setIsFetch(false);
@@ -53,6 +54,7 @@ const PostDetailsContainer = ({postsData, isFetch, setIsFetch}) => {
             const newCommentsData = [...commentsData, response.data];
             setCommentsData(newCommentsData);
         }catch (e) {
+            alert.error("Ошибка добавления коментария");
             console.error(e);
         } finally {
             setIsFetch(false);
@@ -71,6 +73,7 @@ const PostDetailsContainer = ({postsData, isFetch, setIsFetch}) => {
             const newCommentData = commentsData.filter(comment => comment.id !== id);
             setCommentsData(newCommentData);
         } catch (e) {
+            alert.error("Ошибка удаления коментария")
             console.error(e);
         } finally {
             setIsFetch(false);
@@ -97,6 +100,7 @@ const PostDetailsContainer = ({postsData, isFetch, setIsFetch}) => {
             });
             setCommentsData(newCommentsData);
         } catch (e) {
+            alert.error("Ошибка изменения коментария")
             console.error(e);
         } finally {
             setIsFetch(false);

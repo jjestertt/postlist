@@ -26,6 +26,7 @@
 * [React Router DOM](https://reactrouter.com/)
 * [Axios](https://github.com/axios/axios)
 * [Formik](https://formik.org)
+* [React Alert](https://github.com/schiehll/react-alert)
 
 
 
@@ -55,6 +56,6 @@
 <!-- CONTACT -->
 ## Контакты
 
-Сивак Максим - email jjestertt@gmail.com
-
-Ссылка на проект: [https://github.com/jjestertt/postlist](https://github.com/jjestertt/postlist)
+* Сивак Максим 
+* Email: jjestertt@gmail.com
+* Ссылка на проект: [https://github.com/jjestertt/postlist](https://github.com/jjestertt/postlist)

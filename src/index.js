@@ -5,11 +5,21 @@ import ReactDOM from 'react-dom';
 import {HashRouter} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 import Layout from "./layout/Layout";
+import {positions, Provider} from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+
+//Настройки отображения обработчика ошибок
+const options = {
+    timeout: 3000,
+    position: positions.BOTTOM_CENTER
+};
 
 ReactDOM.render(
     <React.StrictMode>
         <HashRouter>
-            <Layout/>
+            <Provider template={AlertTemplate} {...options}>
+                <Layout/>
+            </Provider>
         </HashRouter>
     </React.StrictMode>,
     document.getElementById('root')
