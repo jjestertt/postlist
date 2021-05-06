@@ -1,0 +1,4 @@
+.AddPost{
+    overflow: hidden;
+    transition: height ease-in .3s;
+}
