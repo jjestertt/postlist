@@ -9,12 +9,12 @@
     <a href="https://github.com/github_username/repo_name">Посмотреть демо</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Сообщить об ошибке</a>
+    <img src="https://raw.githubusercontent.com/jjestertt/postlist/master/screen.png" alt="screen" width="500"">
   </p>
 </p>
 
 <!-- ABOUT THE PROJECT -->
 ## Об этом проекте
-<img src="https://raw.githubusercontent.com/jjestertt/postlist/master/screen.png" alt="screen" width="500"">
 
 Приложение считывает данные с фейкового сервера, и отображает список постов, посты можно добавлять, редактировать и удалять. При нажатии на кнопку открыть. появляется страница с деталями поста, и комментариями к посту. Комментарии так же можно добавлять удалять и редактировать
 
