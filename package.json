@@ -1,7 +1,7 @@
 {
   "name": "postlist",
   "version": "0.1.0",
-  "homepage": "http://jjestertt.github.io/postslist",
+  "homepage": "http://jjestertt.github.io/postlist",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
