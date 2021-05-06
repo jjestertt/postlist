@@ -6,7 +6,7 @@
   <p align="center">
     Страница с тестовым заданием
     <br />
-    <a href="https://github.com/jjestertt/postlist">Посмотреть демо</a>
+    <a href="https://jjestertt.github.io/postlist">Посмотреть демо</a>
     ·
     <a href="https://github.com/jjestertt/postlist/issues">Сообщить об ошибке</a>
   </p>
